@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Key</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Icon/bookshelf.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1>Books Key</h1>
+    </div>
+
+    <div class="container">
+        <div class="sub-container">
+            <h2>
+            The Nightmare And The Boy
+            </h2>
+            <h4>Robert</h4>
+            <p>These are an evil spirit formerly thought to oppress people during sleep.A frightening dreamy that usually awakens the sleeper .Something having a monstrous character of a nightmare. ...</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add book</h2>
+        <form>
+        <input type="text" placeholder="Book Title" id="booktitle">
+        <input type="text" placeholder="Book Author" id="bookauthor">
+        <textarea placeholder="short description" id="description"></textarea>
+        <button id="add">ADD</button>
+        <button id="cancel">CANCEL</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-pop-button">+</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
